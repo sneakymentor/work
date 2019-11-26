@@ -1,0 +1,97 @@
+
+public class MainActivity extends AppCompatActivity {
+
+    String et1, et2,et3;
+    EditText etcopy1, etcopy2, etcopy3;
+    Button  good;
+    
+    Intent sendData;
+
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        etcopy1 = findViewById(R.id.bt1);
+        etcopy2 = findViewById(R.id.bt2);
+        etcopy3 = findViewById(R.id.bt3);
+        good = findViewById(R.id.)
+        
+                s
+
+
+    }
+
+    public void good(View view) {
+        et1 = etcopy1.getText().toString();
+        et2 = etcopy2.getText().toString();
+        et3 = etcopy3.getText().toString();
+    }
+}
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/ic_launcher_round">
+
+    <EditText
+        android:id="@+id/bt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorPrimaryDark"/>
+
+
+
+    <EditText
+        android:id="@+id/bt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Class"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorPrimaryDark"/>
+
+
+    <EditText
+        android:id="@+id/bt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="College"
+        android:textStyle="bold"
+        android:textSize="40dp"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorPrimaryDark"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="good"
+        android:text="Submit"
+        android:layout_gravity="center"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="grace"
+        android:text="Submit"
+        android:layout_gravity="center"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="great"
+        android:text="Submit"
+        android:layout_gravity="center"/>
+</LinearLayout>
